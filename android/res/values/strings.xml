@@ -2,7 +2,13 @@
 <resources>
 
     <string name="app_name">Get Up</string>
+    <string name="activity_main">Manage Alarms</string>
+    <string name="activity_question">Question</string>
     <string name="action_settings">Settings</string>
     <string name="action_disableall">Disable All</string>
+    <string name="alarm_name">Name</string>
+    <string name="alarm_hour">Hour</string>
+    <string name="alarm_days">Days</string>
+    <string name="alarm_enable">Enable</string>
 
 </resources>

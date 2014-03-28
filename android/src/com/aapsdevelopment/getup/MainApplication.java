@@ -1,8 +1,8 @@
 package com.aapsdevelopment.getup;
 
-import com.aapsdevelopment.getup.manager.ContextManager;
-
 import android.app.Application;
+
+import com.aapsdevelopment.getup.manager.ContextManager;
 
 public class MainApplication extends Application
 {
@@ -11,6 +11,11 @@ public class MainApplication extends Application
 	{
 		super.onCreate();
 
+		this.initContext();
+	}
+
+	private void initContext()
+	{
 		ContextManager.getInstance().setContext( getApplicationContext() );
 	}
 }

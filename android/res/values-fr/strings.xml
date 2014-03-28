@@ -2,7 +2,13 @@
 <resources>
 
     <string name="app_name">Reveil Intelligent</string>
+    <string name="activity_main">Gestion des alarmes</string>
+    <string name="activity_question">Question</string>
     <string name="action_settings">Paramètres</string>
-	<string name="action_disableall">Tous désactiver</string>
+    <string name="action_disableall">Tous désactiver</string>
+    <string name="alarm_name">Nom</string>
+    <string name="alarm_hour">Heure</string>
+    <string name="alarm_days">Jours</string>
+    <string name="alarm_enable">Actif</string>
 
 </resources>

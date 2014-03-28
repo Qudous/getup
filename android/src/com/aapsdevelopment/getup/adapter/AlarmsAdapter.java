@@ -7,11 +7,10 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
 import com.aapsdevelopment.getup.R;
-import com.aapsdevelopment.getup.R.id;
-import com.aapsdevelopment.getup.R.layout;
 import com.aapsdevelopment.getup.manager.ContextManager;
 import com.aapsdevelopment.getup.model.Alarm;
 import com.aapsdevelopment.getup.model.AlarmProvider;
+import com.aapsdevelopment.getup.ui.listener.AlarmCheckBoxOnCliclListener;
 import com.aapsdevelopment.getup.utils.ViewUtils;
 
 public class AlarmsAdapter extends BaseAdapter
@@ -63,6 +62,8 @@ public class AlarmsAdapter extends BaseAdapter
 	private void updateView( View convertView, Alarm alarm )
 	{
 		ViewUtils.updateTextView( convertView, R.id.AlarmNameTextView, alarm.getTitle() );
-		ViewUtils.updateTextView( convertView, R.id.AlarmHourTextView, String.valueOf( alarm.getDate() ) );
+		ViewUtils.updateTextView( convertView, R.id.AlarmHourTextView, String.valueOf( alarm.getHour() ) + ":" + String.valueOf( alarm.getMinute() ) );
+		ViewUtils.updateCheckbox( convertView, R.id.AlarmEnableCheckBox, new AlarmCheckBoxOnCliclListener( alarm.getId() ) );
+		ViewUtils.updateImageButton( convertView, R.id.AlarmConfigImageButton, new AlarmButtonOnCliskListener( alarm.getId() ) );
 	}
 }

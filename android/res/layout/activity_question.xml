@@ -3,6 +3,7 @@
     android:id="@+id/Container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="MainActivity"
-    tools:ignore="MergeRootFrame"
-    android:background="@color/blue" />
+    android:background="@color/purple"
+    tools:context="QuestionActivity"
+    tools:ignore="MergeRootFrame" />
+

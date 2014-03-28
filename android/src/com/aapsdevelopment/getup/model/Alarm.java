@@ -8,7 +8,9 @@ public class Alarm
 
 	private long category;
 
-	private long date;
+	private int hour;
+
+	private int minute;
 
 	private long days;
 
@@ -16,17 +18,18 @@ public class Alarm
 
 	public Alarm()
 	{
-		this( 0L, "", 0l, 0l, 0l, 0l );
+		this( 0L, "", 0, 0, 0l, 0l, 0l );
 	}
 
-	public Alarm( long id, String title, long category, long date, long days, long song )
+	public Alarm( long id, String title, int hour, int minute, long days, long category, long song )
 	{
 		super();
 		this.id = id;
 		this.title = title;
-		this.category = category;
-		this.date = date;
+		this.hour = hour;
+		this.minute = minute;
 		this.days = days;
+		this.category = category;
 		this.song = song;
 	}
 
@@ -60,14 +63,24 @@ public class Alarm
 		this.category = category;
 	}
 
-	public long getDate()
+	public int getHour()
 	{
-		return date;
+		return hour;
 	}
 
-	public void setDate( long date )
+	public void setHour( int hour )
 	{
-		this.date = date;
+		this.hour = hour;
+	}
+
+	public int getMinute()
+	{
+		return minute;
+	}
+
+	public void setMinute( int minute )
+	{
+		this.minute = minute;
 	}
 
 	public long getDays()

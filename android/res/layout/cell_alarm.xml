@@ -3,54 +3,53 @@
     android:layout_height="@dimen/fragment_alarms_cell_height"
     android:background="@color/grey_dark"
     android:orientation="horizontal" >
-    
+
     <CheckBox
         android:id="@+id/AlarmEnableCheckBox"
+        style="@style/GetUpCheckBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@null"
-        android:layout_weight="0" 
-        style="@style/GetUpCheckBox"/>
-    
+        android:layout_weight="0"
+        android:text="@null" />
+
     <ImageView
         android:id="@+id/AlarmCategoryImageButton"
+        style="@style/GetUpImageView"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:adjustViewBounds="true"
         android:contentDescription="@null"
         android:scaleType="center"
-        android:layout_weight="1"
-        android:src="@drawable/default_image"
-        style="@style/GetUpImageView" />
+        android:src="@drawable/default_image" />
 
     <TextView
         android:id="@+id/AlarmNameTextView"
+        style="@style/GetUpTextView"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="6"
-        android:gravity="left|center_vertical"
         android:background="@color/red"
-        android:paddingLeft="10dp"
         android:clickable="false"
-        style="@style/GetUpTextView" />
-    
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp" />
+
     <TextView
         android:id="@+id/AlarmHourTextView"
+        style="@style/GetUpTextView"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="3"
-        android:gravity="center"
-        android:clickable="false"
         android:background="@color/beige"
-        style="@style/GetUpTextView" />
-    
-    <!--  ImageButton 
+        android:clickable="false"
+        android:gravity="center" />
+
+    <ImageButton
         android:id="@+id/AlarmConfigImageButton"
         android:layout_width="0dp"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:contentDescription="@null"
-        android:layout_weight="1"/ -->
-    
-    
+        android:src="@drawable/default_settings" />
 
 </LinearLayout>
