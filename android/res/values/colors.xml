@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Generic -->
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="green">#00FF00</color>
+    <color name="brown">#4c2e2590</color>
+    <color name="purple">#8815BA</color>
+    <color name="beige">#e3d9b7</color>
+    <color name="grey">#999999</color>
+    <color name="grey_dark">#333333</color>
+    <color name="grey_medium">#777777</color>
+    <color name="grey_light">#AAAAAA</color>
+    <color name="shadow">#22CCCCCC</color>
+    <color name="shadow_dark">#333333AA</color>
+    <color name="transparent">#00000000</color>
+
+    <!-- MagPad -->
+
+    <color name="default_background">#FFFFFF</color>
+    
+    <color name="button_background">#FFFFFF</color>
+    <color name="button_pressed">#000000</color>
+    <color name="button_default">#CCCCCC</color>
+
+</resources>
